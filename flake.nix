@@ -1,5 +1,5 @@
 # Author: phga <phga@posteo.de>
-# Most of the code is copypasta of the official package from the nixpkgs repo
+# Most of the code is copypasta of the official package from the nixpkgs repo.
 # Some of the parts are copypasta of the derivation from @dmayle https://github.com/NixOS/nixpkgs/issues/222937
 {
   inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
