@@ -1,3 +1,25 @@
 * Description
 
 A nix flake that installs prusa-slicer-alpha on nixos.
+
+* Usage
+
+In you flake config:
+
+#+begin_src nix :results output scalar
+{
+  inputs = {
+    prusa-slicer-git.url = "github:qhga/nix-prusa-slicer-git";
+  };
+  # ...
+  outputs = inputs@{ nixpkgs, nixpkgs-unstable, home-manager, pianoteq, prusa-slicer-git, blender-bin, ... }:
+    {
+      # ...
+      environment.systemPackages = with pkgs; [
+        prusa-slicer-git.packages.x86_64-linux.default
+        # ...
+      ]
+        # ...
+    }
+}
+#+end_src
