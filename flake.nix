@@ -46,7 +46,7 @@
           nativeBuildInputs = [ cmake ];
         };
       in stdenv.mkDerivation rec {
-        pname = "prusa-slicer-git";
+        pname = "prusa-slicer";
         version = "2.6.0-alpha5";
 
         nativeBuildInputs = [
