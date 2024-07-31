@@ -4,7 +4,7 @@ A nix flake that installs prusa-slicer-alpha on nixos.
 
 * Usage
 
-In you flake config:
+In your flake config:
 
 #+begin_src nix :results output scalar
 {
